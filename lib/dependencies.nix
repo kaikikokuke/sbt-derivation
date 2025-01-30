@@ -89,7 +89,7 @@
       ${lib.optionalString optimize ''
         (
           umask 000
-          ${rdfind}/bin/rdfind -makesymlinks true -outputname /dev/null $SBT_DEPS/project/{.sbtboot,.boot,.ivy,.coursier}
+          ${rdfind}/bin/rdfind -makesymlinks true -outputname /dev/null $SBT_DEPS/project/{.sbtboot,.boot,.ivy,.ivy2,.coursier}
           ${symlinks}/bin/symlinks -rc $SBT_DEPS/project
         )
       ''}
